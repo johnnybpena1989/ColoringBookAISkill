@@ -4,6 +4,28 @@
 
 Use with ChatGPT, Claude, Grok or another assistant **that can open a GitHub URL and has native image/file tools**. The same [Agent Skills](https://agentskills.io/specification) document directs planning, illustration, quality checks, printable interiors, full-wrap covers and Amazon KDP listing preparation.
 
+## Install with one CLI command
+
+Requires Node.js and npm and a supported AI coding agent.
+
+```bash
+npx skills add johnnybpena1989/ColoringBookAISkill
+```
+
+The installer prompts for your target agent and install scope. To make the skill available across projects:
+
+```bash
+npx skills add johnnybpena1989/ColoringBookAISkill -g
+```
+
+To list the skill without installing it:
+
+```bash
+npx skills add johnnybpena1989/ColoringBookAISkill --list
+```
+
+Update later with `npx skills update`. The standard CLI is maintained separately at https://github.com/vercel-labs/skills. This repository supplies the skill files, **not** a custom executable. CLI installation supports compatible agent environments such as Codex and Claude Code; it does not install skills directly into consumer ChatGPT, Claude or Grok chat apps.
+
 ## One copy-paste command
 
 > Read https://raw.githubusercontent.com/johnnybpena1989/ColoringBookAISkill/main/skills/coloring-book-creator/SKILL.md and follow it as my coloring book production workflow. Load its linked references as needed. Use your own native image and file tools; no API keys, installers, code or external services. Start by asking my theme and whether I want Autonomous or Guided mode. Create real downloadable book files wherever your tools allow; inspect and correct every page. Be explicit about anything your platform cannot actually produce.
